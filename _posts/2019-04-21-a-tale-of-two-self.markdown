@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "A tale of two `self`"
-date:   2019-04-21 21:33:19 +0200
+title:  "a tale of two `self`"
 categories: 
 ---
 A while ago, I came across a problematic piece of code that turned out to be an interesting one:

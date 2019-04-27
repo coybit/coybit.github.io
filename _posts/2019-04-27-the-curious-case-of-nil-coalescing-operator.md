@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Curious Case of Nil-Coalescing Operator"
+title:  "the curious case of nil-coalescing operator"
 ---
 The Curious Case of Nil-Coalescing Operator
 
