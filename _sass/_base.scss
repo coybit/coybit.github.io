@@ -18,7 +18,7 @@ $vertical-spacing-unit:         40px;
 $nav-height:                    40px;
 
 /* portfolio tinkering */
-$img_spacing: 5px; 
+$img_spacing: 5px;
 $img_height: 275px;
 $caption_font_size: 12px;
 $caption_color: #aaa;
@@ -116,6 +116,8 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
+    margin-bottom: 30px;
+    margin-top: 70px;
 }
 
 
@@ -127,7 +129,7 @@ a {
     text-decoration: none;
     /*
     &:visited {
-        color: darken($brand-color, 15%); 
+        color: darken($brand-color, 15%);
     }
     */
     &:hover {
@@ -186,7 +188,7 @@ p, li {
 
 /**
  * Wrapper
- */ 
+ */
 
 .wrapper {
     max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
@@ -217,6 +219,3 @@ p, li {
         clear: both;
     }
 }
-
-
-

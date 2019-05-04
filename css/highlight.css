@@ -1,45 +1,163 @@
-/* Tomorrow Night Theme */
+/* Hemisu Dark */
 /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* Original theme - http://noahfrederick.com/vim-color-scheme-hemisu/ */
 /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-.tomorrow-comment, pre .comment, pre .title {
-  color: #969896;
+.highlight{
+    background:#fff
 }
-
-.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
-  color: #cc6666;
+.highlight .c,.highlight .cm,.highlight .cp,.highlight .c1,.highlight .cs{
+    color:#007400
 }
-
-.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
-  color: #de935f;
+.highlight .k,.highlight .kc,.highlight .kd,.highlight .kp,.highlight .kr,.highlight .nb{
+    color:#AA0D91
 }
-
-.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
-  color: #f0c674;
+.highlight .kt{
+    color:#3F6E74
 }
-
-.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
-  color: #b5bd68;
+.highlight .err{
+    color:#a61717
 }
-
-.tomorrow-aqua, pre .css .hexcolor {
-  color: #8abeb7;
+.highlight .o{
+    font-weight:bold
 }
-
-.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
-  color: #81a2be;
+.highlight .gd{
+    color:#000000;
+    background-color:#fdd
 }
-
-.tomorrow-purple, pre .keyword, pre .javascript .function {
-  color: #b294bb;
+.highlight .gd .x{
+    color:#000000;
+    background-color:#faa
+}
+.highlight .ge{
+    font-style:italic
+}
+.highlight .gr{
+    color:#a00
+}
+.highlight .gh{
+    color:#999
+}
+.highlight .gi{
+    color:#000000;
+    background-color:#dfd
+}
+.highlight .gi .x{
+    color:#000000;
+    background-color:#afa
+}
+.highlight .go{
+    color:#888
+}
+.highlight .gp{
+    color:#555
+}
+.highlight .gs{
+    font-weight:bold
+}
+.highlight .gu{
+    color:#aaa
+}
+.highlight .gt{
+    color:#a00
+}
+.highlight .m,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{
+    color:#1C00CF
+}
+.highlight .s{
+    color:#C41A16
+}
+.highlight .na{
+    color:teal
+}
+.highlight .nc{
+    color:#5C2699
+}
+.highlight .no{
+    color:teal
+}
+.highlight .ni{
+    color:purple
+}
+.highlight .ne{
+    color:#900
+}
+.highlight .nn{
+    color:#555
+}
+.highlight .nt{
+    color:navy
+}
+.highlight .nv,.highlight .nf{
+    color:#3F6E74
+}
+.highlight .ow{
+    font-weight:bold
+}
+.highlight .w{
+    color:#bbb
+}
+.highlight .sb{
+    color:#d14
+}
+.highlight .sc{
+    color:#d14
+}
+.highlight .sd{
+    color:#d14
+}
+.highlight .s2{
+    color:#d14
+}
+.highlight .se{
+    color:#d14
+}
+.highlight .sh{
+    color:#d14
+}
+.highlight .si{
+    color:#d14
+}
+.highlight .sx{
+    color:#d14
+}
+.highlight .sr{
+    color:#009926
+}
+.highlight .s1{
+    color:#d14
+}
+.highlight .ss{
+    color:#990073
+}
+.highlight .bp{
+    color:#999
+}
+.highlight .vc{
+    color:teal
+}
+.highlight .vg{
+    color:teal
+}
+.highlight .vi{
+    color:teal
+}
+.highlight .il{
+    color:#099
 }
 
 pre code {
   display: block;
-  background: #1d1f21;
-  color: #c5c8c6;
-  font-family: Menlo, Monaco, Consolas, monospace;
-  line-height: 1.5;
-  border: 1px solid #ccc;
-  padding: 10px;
+  font-size: 14px;
+  line-height: 1.6em;
+  border-left: 5px solid #cde9f4;
+  margin: 0.5em 0 1.5em 10px;
+  padding: 4px 0 2px 10px;
+  overflow: scroll;
+  font-family: Menlo, Consolas, Monaco, "Courier New", monospace, serif;
+}
+pre .xml .tag .title {
+  color: #111111;
+}
+pre .html .tag .title {
+  color: #111111;
 }
