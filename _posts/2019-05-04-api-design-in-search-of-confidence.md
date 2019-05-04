@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "API Design: In Search of Confidence"
+title:  "api design: in search of confidence"
 categories: 
 ---
 A given API to be well-designed has to fulfill many requirements and we can talk about these requirements for hours. But here I'm going to talk about one aspect of a well-thought and well-design API that I believe is really important: How confident we are in what we are doing?
