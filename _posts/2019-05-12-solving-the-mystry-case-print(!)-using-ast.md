@@ -46,7 +46,7 @@ print(!)
 ```
 
 The output was:
-[!]()
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/shot-ast1.png)
 
 The interseing part is:
 ``` sh
@@ -77,18 +77,25 @@ extension Bool {
   }
 }
 ```
-This is `!` operator works under the hood.
+This is how `!` operator works under the hood then.
 
 It's time to answer the next question. Why do we get a compiler error when we try to compile `print(*)`? If we dump AST again for this source code:
 ``` swift
 import Foundation
 print(*)
 ```
+
 We get this output:
-[!]()
+
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/shot-ast2.png)
+
 In the last part of the output, there is the list of all available declarations of `*` that Swift compiler cannot decide which one we mean to use. How can we solve this ambiguous case? I found the answer [here](https://ericasadun.com/2018/03/09/the-curious-case-of-operator-assignment/). The answer is neither trivial nor documented somewhere in Swift documentation:
+
+> The answer is to both parenthesize and type the operator
+
+I changed the source code accordingly and the problem solved:
+
 ``` swift
 let op: (Int, Int) -> Int = (*)
 print((*)) // Output: (Function)
 ```
-
