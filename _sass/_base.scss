@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
 
 /** Variables **********************************************/
 $base-font-family:              Helvetica, sans-serif;
-$base-line-height:              1.5em;
+$base-line-height:              1.6em;
 $horizontal-spacing-unit:       50px;
 $vertical-spacing-unit:         40px;
 $nav-height:                    40px;
@@ -87,6 +87,7 @@ hr{
  */
 figure > img {
     display: block;
+    width: 100%;
 }
 
 figcaption {
@@ -191,8 +192,8 @@ p, li {
  */
 
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-    max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
+    max-width: -webkit-calc(1000px - (#{$horizontal-spacing-unit} * 2));
+    max-width:         calc(1000px - (#{$horizontal-spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $horizontal-spacing-unit;
