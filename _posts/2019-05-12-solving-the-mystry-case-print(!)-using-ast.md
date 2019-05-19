@@ -46,9 +46,8 @@ print(!)
 ```
 
 The output was:
-{% figure %}
+
 ![](https://github.com/coybit/coybit.github.io/raw/master/assets/shot-ast1.png)
-{% endfigure %}
 
 The interseing part is:
 ``` sh
@@ -89,9 +88,7 @@ print(*)
 
 We get this output:
 
-{% figure %}
 ![](https://github.com/coybit/coybit.github.io/raw/master/assets/shot-ast2.png)
-{% endfigure %}
 
 In the last part of the output, there is the list of all available declarations of `*` that Swift compiler cannot decide which one we mean to use. How can we solve this ambiguous case? I found the answer [here](https://ericasadun.com/2018/03/09/the-curious-case-of-operator-assignment/). The answer is neither trivial nor documented somewhere in Swift documentation:
 
