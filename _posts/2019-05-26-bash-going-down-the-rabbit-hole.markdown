@@ -53,7 +53,7 @@ If you're interested in learning more about the process, look at [this file](htt
 5. Run it
 Be Careful: if you run `bash` in your bash, your installed bash is executed. But if instead run `./bash`, the executable bash file in the current directory is executed. So run `./bash`. 
 
-![IMG](start) 
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-start.png)
 
 Welcome to your brand new bash!
 
@@ -62,27 +62,27 @@ Welcome to your brand new bash!
 To attach a debugger to the running bash, you need to config `launch.json` file of VSCode. It's super easy. Just follow this instruction: 
 https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md
 This is my `launch.json` file:
-```
+``` json
 {
-// Use IntelliSense to learn about possible attributes.
-// Hover to view descriptions of existing attributes.
-// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-"version": "0.2.0",
-"configurations": [
-{ 
-"name": "(lldb) Attach",
-"type": "cppdbg",
-"request": "attach",
-"program": "${workspaceFolder}/bash",
-"processId": "${command:pickProcess}",
-"MIMode": "lldb"
-}
-]
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        { 
+            "name": "(lldb) Attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceFolder}/bash",
+            "processId": "${command:pickProcess}",
+            "MIMode": "lldb"
+        }
+    ]
 }
 ```
 After that, the only thing you need to do is running the debuger.
 
-![IMG](shot) 
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-attaching-debugger.png)
 
 Once the debugger is attached to the running bash, you can add a breakpoint, watch variables, executing the code line by line,...
 
@@ -138,7 +138,7 @@ For example, when you run this command:
 ```
 the parser builds a `command` object like this:
 
-![IMG](command) 
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-cm_cond.png)
 
 
 Back to the question with which we started this section when the entered command is:
@@ -147,7 +147,7 @@ Back to the question with which we started this section when the entered command
 ```
 The bash parser generates this `command` and passes it down to `execute_command`.:
 
-![IMG](cm_cond.png) 
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-cm_cond.png)
 
 `cm_cond` means this command is a of `cond_com` type. By looking at the definitaion of this structure:
 
@@ -177,7 +177,7 @@ we learn that:
 
 So it is a tree. I've drawn this tree to make it easier what the parser has generated:
 
-![IMG](tree.png)
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-tree.png)
 
 But when you enter:
 ```
@@ -185,7 +185,7 @@ But when you enter:
 ```
 the parset generates this `command` object:
 
-![IMG](connection object.png) 
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-cm_connection.png)
 
 The first difference you have probably noticed is the value of the `type` field. This value shows that the union part of the `command` structure represents a `connection` structure which is:
 
@@ -203,8 +203,7 @@ A `connection` command has two sub-commands, `first` and `second`.
 
 I have drawn what the parser generates:
 
-![IMG](list.png)
-
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-list.png)
 
 By continuing debugging, we will see that how a `connection` command gets evaluated is different from how a `cond_com` command does. Actually, `cond_com` has a tree structure ( left node, right node and op ) and is made of the expression according to the  Operator Precedence table, but `connection` commands are more like a list ( it has first and second sub-command ) and gets evaluated from left to right given these two principles:
 
@@ -239,5 +238,5 @@ But what about the other example:
 As you see, the result of both of these two examples are the same.
 
 
-## Summary
+### Summary
 In spite of my first guest, `&&`/`||` in a conditional expression is not the same as `&&`/`||` in a list command. They get parsed and evaluated differently, but most of the time, the results are the same.
