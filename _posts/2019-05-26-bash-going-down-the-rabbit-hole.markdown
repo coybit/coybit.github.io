@@ -138,7 +138,7 @@ For example, when you run this command:
 ```
 the parser builds a `command` object like this:
 
-![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-cm_cond.png)
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-command.png)
 
 
 Back to the question with which we started this section when the entered command is:
