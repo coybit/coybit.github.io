@@ -11,7 +11,7 @@ I'm not a bash expert, so this line caught my attention. At first, I thought wha
 Actually, if you're using `A && B || C` in bash how you use `A ? B : C`  in other programming languages without knowing what is happening under the hood, and it works for you, you are just lucky!
 
 ### Contradiction
-After seeing that line, I started searching on the web to learn what that line means. The first thing I noticed after reading some articles and answers was that many people don't know that line gets evaluated by bash and they have given up to understand it. The vaguest aspect of evaluation was the precedence of operators that looks is different than when they are being used within a condition expression. Actually, you can not find any piece of information about it. The more you search, the less you find. The only thing you can find is the table of Operator Precedence  ( for instance this one https://www.tldp.org/LDP/abs/html/opprecedence.html) that doesn't say anything about when these operators are used in this kind of usages.
+After seeing that line, I started searching on the web to learn what that line means. The first thing I noticed after reading some articles and answers was that many people don't know that line gets evaluated by bash and they have given up to understand it. The vaguest aspect of evaluation was the precedence of operators that looks is different than when they are being used within a condition expression. Actually, you can not find any piece of information about it. The more you search, the less you find. The only thing you can find is the table of Operator Precedence  ( for instance [this one](https://www.tldp.org/LDP/abs/html/opprecedence.html) ) that doesn't say anything about when these operators are used in this kind of usages.
 But at least you know that if `&&` and `||` getting used within a condition, how they get evaluated. `&&` has a higher precedence than `||`. So:
 ```
 [[ A || B && C ]]
@@ -33,14 +33,11 @@ When you can not find your answer by searching on the web, it means you need to 
 ### How to set up our lab
 Obviously, there are thousands of thousands of way to set up your lab, but here I'm showing you how I did it for this example:
 
-1. Download Visual Studio Code
-https://code.visualstudio.com/
+1. Download [Visual Studio Code](https://code.visualstudio.com/)
 
-2. Download C/C++ Extension for Visual Studio Code
-https://code.visualstudio.com/docs/languages/cpp#_debugging
+2. Download [C/C++ Extension](https://code.visualstudio.com/docs/languages/cpp#_debugging) for Visual Studio Code
 
-3. Clone bash source code ( it's a mirror of the source code )
-https://github.com/bminor/bash
+3. Clone [bash source code](https://github.com/bminor/bash) ( it's a mirror of the source code )
 
 4. Build it.
 It's really simple.
@@ -59,8 +56,8 @@ Welcome to your brand new bash!
 
 
 6. Attach the debugger
-To attach a debugger to the running bash, you need to config `launch.json` file of VSCode. It's super easy. Just follow this instruction: 
-https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md
+To attach a debugger to the running bash, you need to config `launch.json` file of VSCode. It's super easy. Just follow [this instruction](https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md): 
+
 This is my `launch.json` file:
 ``` json
 {
