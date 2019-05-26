@@ -13,12 +13,12 @@ Actually, if you're using `A && B || C` in bash how you use `A ? B : C`  in othe
 ### Contradiction
 After seeing that line, I started searching on the web to learn what that line means. The first thing I noticed after reading some articles and answers was that many people don't know that line gets evaluated by bash and they have given up to understand it. The vaguest aspect of evaluation was the precedence of operators that looks is different than when they are being used within a condition expression. Actually, you can not find any piece of information about it. The more you search, the less you find. The only thing you can find is the table of Operator Precedence  ( for instance [this one](https://www.tldp.org/LDP/abs/html/opprecedence.html) ) that doesn't say anything about when these operators are used in this kind of usages.
 But at least you know that if `&&` and `||` getting used within a condition, how they get evaluated. `&&` has a higher precedence than `||`. So:
-```
+``` sh
 [[ A || B && C ]]
 ```
 First `B && C` is evaluated ( lets call this expression `q` ). Then `A || q` is evaluated.
 
-```
+``` sh
 [[ A && B || C && D ]]
 ```
 1. First this expression `q := (A && B)` (  note: `q := X` means from now on, we refer to `X` as `q` )
@@ -86,10 +86,10 @@ Once the debugger is attached to the running bash, you can add a breakpoint, wat
 
 ### Connectional AND vs Conditional AND
 I made the running bash to run these two commands and by adding a breakpoint and checking variables while the commands were getting executed, I tried to understand how bash evaluates them.
-```
+``` sh
 [[ A == B && ls || cd ]] 
 ```
-```
+``` sh
 [[ A == B ]] && ls || cd
 ```
 
@@ -130,7 +130,7 @@ typedef struct command {
 ```
 
 For example, when you run this command: 
-```
+``` sh
 [[ A == B ]] && echo 1 || echo 2 
 ```
 the parser builds a `command` object like this:
@@ -139,7 +139,7 @@ the parser builds a `command` object like this:
 
 
 Back to the question with which we started this section when the entered command is:
-```
+``` sh
 [[ A == B && ls || cd ]] 
 ```
 The bash parser generates this `command` and passes it down to `execute_command`.:
@@ -177,7 +177,7 @@ So it is a tree. I've drawn this tree to make it easier what the parser has gene
 ![](https://github.com/coybit/coybit.github.io/raw/master/assets/bash/bash-tree.png)
 
 But when you enter:
-```
+``` sh
 [[ A == B ]] && ls || cd
 ```
 the parset generates this `command` object:
@@ -212,7 +212,7 @@ Command2 is executed if and only if command1 returns a non-zero exit status.
 
 
 In our example:
-```
+``` sh
 [[ A == B ]] && ls || cd
 ```
 
@@ -220,7 +220,7 @@ In our example:
 2. Because the result of `[[ A == B ]] && ls` was false, according to princple #2, `cd` will be executed
 
 But what about the other example:
-```
+``` sh
 [[ A == B && ls || cd ]]
 ```
 1. According to the generated tree, the expression is made of two sub-expression with the same precedence, so they gets evaluated from left to right:
