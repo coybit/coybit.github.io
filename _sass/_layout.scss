@@ -141,6 +141,10 @@ line-height: 1;
 @include media-query($on-laptop) {
 font-size: 36px;
     }
+    
+    ul > li > h2 {
+        margin-bottom: 0;
+    }
 }
 .post-content {
 h2 {
