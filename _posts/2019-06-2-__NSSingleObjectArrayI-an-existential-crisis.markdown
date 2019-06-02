@@ -26,24 +26,24 @@ I measured how much it takes to create an instance of `NSArray`. The varibale of
 
 Case#   | Array   |  Time
 --------|----------|----
-Case1    | `NSArray *arr = @[@(1)];`                                                 | 2.62712e-05 s
-Case2    | `NSArray<NSNumber *> *arr = @[@(1)];`                                     | 2.59094e-06 s
-Case3    | `NSArray *arr = @[@(1), @(2)];`                                           | 1.91713e-06 s
-Case4    | `NSArray<NSNumber *> *arr = @[@(1), @(2)];`                               | 2.41189e-06 s
-Case5    | `NSArray *arr = @[@(1), @(2),@(3),@(4),@(5),@(6),@(7),@(8)];`             | 2.89804e-06 s
-Case6    | `NSArray<NSNumber *> *arr = @[@(1), @(2),@(3),@(4),@(5),@(6),@(7),@(8)];` | 3.00701e-06 s
+Case1|`NSArray *arr = @[@(1)];`| 2.62712e-05 s
+Case2|`NSArray<NSNumber *> *arr = @[@(1)];`| 2.59094e-06 s
+Case3|`NSArray *arr = @[@(1), @(2)];`| 1.91713e-06 s
+Case4|`NSArray<NSNumber *> *arr = @[@(1), @(2)];`| 2.41189e-06 s
+Case5|`NSArray *arr = @[@(1), @(2),@(3),@(4),@(5),@(6),@(7),@(8)];`| 2.89804e-06 s
+Case6|`NSArray<NSNumber *> *arr = @[@(1), @(2),@(3),@(4),@(5),@(6),@(7),@(8)];`| 3.00701e-06 s
 
 In general, create an instance of  `__NSSingleObjectArrayI` is slower than `__NSArrayI`, and specifying the type of array's items makes the creation faster. 
 Then I measured the amount of time it takes to access the first item of an array. The varible was the type of array, but the access method was the same:
 
-Case#   | Array   |  Time
+Case#   | Array|  Time
 --------|----------|----
-Case1    | `NSArray *arr = @[@(1)];`                                                 | 4.65124 s
-Case2    | `NSArray<NSNumber *> *arr = @[@(1)];`                                     | 4.61453 s
-Case3    | `NSArray *arr = @[@(1), @(2)];`                                           | 4.11629 s
-Case4    | `NSArray<NSNumber *> *arr = @[@(1), @(2)];`                               | 4.04419 s
-Case5    | `NSArray *arr = @[@(1), @(2),@(3),@(4),@(5),@(6),@(7),@(8)];`             | 4.05391 s
-Case6    | `NSArray<NSNumber *> *arr = @[@(1), @(2),@(3),@(4),@(5),@(6),@(7),@(8)];` | 4.09293 s
+Case1|`NSArray *arr = @[@(1)];`| 4.65124 s
+Case2|`NSArray<NSNumber *> *arr = @[@(1)];`| 4.61453 s
+Case3|`NSArray *arr = @[@(1), @(2)];`| 4.11629 s
+Case4|`NSArray<NSNumber *> *arr = @[@(1), @(2)];`| 4.04419 s
+Case5|`NSArray *arr = @[@(1), @(2),@(3),@(4),@(5),@(6),@(7),@(8)];`| 4.05391 s
+Case6|`NSArray<NSNumber *> *arr = @[@(1), @(2),@(3),@(4),@(5),@(6),@(7),@(8)];`| 4.09293 s
 
 As you can see, accessing the first item of an array of `__NSSingleObjectArrayI` type is slower than `__NSArrayI`, and specifying the type of array's items enables us to access the first item faster.
 
@@ -54,12 +54,12 @@ I ran another experiment. This time in each test case, I created 1000 instance o
 
 Case#   | Array   |  Memory
 --------|----------|----
-Case1    | `@[@(1)]`                          | 156,25 Kb
-Case2    | `@[@(1),@(2)]`                     | 312,50 Kb
-Case3    | `@[@(1),@(2),@(3)]`                | 468,75 Kb
-Case4    | `@[@(1),@(2),@(3),@(4)]`           | 468,75 Kb
-Case5    | `@[@(1),@(2),@(3),@(4),@(5)]`      | 625,00 Kb
-Case6    | `@[@(1),@(2),@(3),@(4),@(5),@(6)]` | 781,25 Kb
+Case1|`@[@(1)]`| 156,25 Kb
+Case2|`@[@(1),@(2)]`| 312,50 Kb
+Case3|`@[@(1),@(2),@(3)]`| 468,75 Kb
+Case4|`@[@(1),@(2),@(3),@(4)]`| 468,75 Kb
+Case5|`@[@(1),@(2),@(3),@(4),@(5)]`| 625,00 Kb
+Case6|`@[@(1),@(2),@(3),@(4),@(5),@(6)]` | 781,25 Kb
 
 Even when we compare memory usage, there is no significant difference between these two (size of `@[@(1),@(2)]` x 2 = size of  `@[@(1)]`, that makes sense).
 
