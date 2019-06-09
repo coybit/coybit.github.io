@@ -159,7 +159,7 @@ UIApplication (next: nil)
                           SimpleCellView #10 (next: GreenTableViewController)
 ```
 
-![UI]()
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/responder-chain-ui.gif)
 
 In `SimpleCellView` when user selects a cell, `showError` is called:
 ``` swift
