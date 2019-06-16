@@ -35,7 +35,7 @@ s.source =
 
 As you can see, this podspec points to another tag (Firestore-1.2.1). Now, let's take a look into [the list of tags of the repository](https://github.com/firebase/firebase-ios-sdk/tags):
 
-![IMG](http://127.0.0.1:4000/assets/screen-shot-2019-04-14-at-10.59.22-am.png)
+![](https://github.com/coybit/coybit.github.io/assets/screen-shot-2019-04-14-at-10.59.22-am.png)
 
 You can see [Firestore-1.2.1](https://github.com/firebase/firebase-ios-sdk/releases/tag/Firestore-1.2.1) was created 15 days ago, along with 3 more tags that all of them point to the same commit (7f869fb).
 
