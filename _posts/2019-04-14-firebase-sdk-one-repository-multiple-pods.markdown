@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "firebase sdk: one repository, multiple pods"
-categories: firebase, pod, podspec
 ---
 Honestly, when I learned how [Firebase SDK](https://github.com/firebase/firebase-ios-sdk) has been organized as a single repository that contains multiple pods, I found it really neat and efficient.
 
