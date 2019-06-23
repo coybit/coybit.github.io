@@ -10,7 +10,7 @@ I, as an observer of all these failures, asked myself every time, after every st
 ### 2 Years Ago: When I read that book
 Until 2 years ago, everything I knew about Scrum and Agile methodology I had learned from non-original resources. 2 years ago, accidentally, I found this book in a small abandon library in my previous workplace:
 
-![](https://github.com/coybit/coybit.github.io/raw/master/assets/standup/book.png)
+![](https://github.com/coybit/coybit.github.io/raw/master/assets/standup/book.jpg)
 
 It explains Scrum, in the purest form. If you want to learn or re-learn Scrum, it's a must-read. What is my most important takeaway from this book? Scrum is a mindset which you build and the rest (backlog, standup, planning, retrospective, ... ) comes after that. They are all inevitable results of this mindset. If you build this mindset, organically, gradually, over course of time, in search of solutions for natural problems your team struggles with, through process of customization, you invite them again and one day you realize you have been doing standup, backlog/sprint planning and retrospective, may under different names. You don't know since when. But you invented them again and customized them according to your needs and have been using them to become and stay agile. I believe this the biggest mistake people make when they try to adapt to Scrum. They start from tools to get to mindset. But it's the other way around:
 
