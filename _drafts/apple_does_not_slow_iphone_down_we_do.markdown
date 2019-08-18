@@ -1,4 +1,7 @@
-## Apple doesn't slow iPhone down, we do
+---
+layout: post
+title:  "apple doesn't slow iPhone down, we do"
+---
 
 ### Part I: I lost my brand new iPhone ☹️
 I lost my iPhone XS three weeks ago. I don't want to buy a new one again any time soon. So I fished my old iPhone 5s out of my drawer. Setting it up, I noticed it is slow. To be accurate, it was too slow. Slower than when I was using it as my main device/phone. It's unbearable. Why is it so? What happened in the last 2-3 months? [Has Apple done some magic to persuade me to buy a new phone](https://webcache.googleusercontent.com/search?q=cache:CNH3hYYmNXEJ:https://www.huffpost.com/entry/apple-new-iphones_n_5967626)?
@@ -10,7 +13,7 @@ Apple hasn't done anything to deliberately throttle my phone.
 ### Part II: a craving to consume more 
 Probably you have blamed Chrome or Slack for using too much RAM too. But this is a wide and deep problem. It's not easy to find a piece of software that is built with as much thought and effort put into as it's used to be. Look at this supposedly tiny winy software to mirror my screen on conference room screen. After keeping it open for 2 or 3 hours, it gets to the points:
 
-[IMG]
+![](https://raw.githubusercontent.com/coybit/coybit.github.io/master/assets/apple_does_not_slow_iphone_down_we_do/activity.png)
 
 Right now, I don't have any important software open on my laptop and 11GB of ram is already full. 6 years ago, my laptop had 2GB of ram and it was enough!
 
@@ -31,6 +34,7 @@ I felt over the course of time we, developers, are getting negligent and careles
 ### Part V: I won't suck it up (at least for now) 
 I've decided to develop my next iOS side project for an old iPhone. I even tried to find iPhone 4, but no success yet. 
 
-[IMG]
+![](https://raw.githubusercontent.com/coybit/coybit.github.io/master/assets/apple_does_not_slow_iphone_down_we_do/challenge.jpg)
+
 
 I'm curious to see what kind of obstacle I will encounter and how I can find my way around them.
