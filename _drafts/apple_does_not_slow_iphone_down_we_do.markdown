@@ -33,8 +33,7 @@ I felt over the course of time we, developers, are getting negligent and careles
 
 ### Part V: I won't suck it up (at least for now) 
 I've decided to develop my next iOS side project for an old iPhone. I even tried to find iPhone 4, but no success yet. 
+I'm curious to see what obstacles I will encounter and how I can find my way around them.
 
 ![](https://raw.githubusercontent.com/coybit/coybit.github.io/master/assets/apple_does_not_slow_iphone_down_we_do/challenge.jpg)
 
-
-I'm curious to see what kind of obstacle I will encounter and how I can find my way around them.
