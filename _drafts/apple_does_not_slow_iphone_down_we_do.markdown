@@ -11,11 +11,11 @@ The answer is ... No.
 Apple hasn't done anything to deliberately throttle my phone.
 
 ### Part II: a craving to consume more 
-Probably you have blamed Chrome or Slack for using too much RAM too. But this is a wide and deep problem. It's not easy to find a piece of software that is built with as much thought and effort put into as it's used to be. Look at this supposedly tiny winy software to mirror my screen on conference room screen. After keeping it open for 2 or 3 hours, it gets to the points:
+Probably you have blamed Chrome or Slack for using too much RAM too. But this is a wide and deep problem. It's not easy to find a piece of software that is built with as much thought and effort put into as it's used to be. Look at this supposedly tiny winy software that the only thig does is mirroring my screen on a conference room display. After keeping it open for 2 or 3 hours, it gets to the points:
 
 ![](https://raw.githubusercontent.com/coybit/coybit.github.io/master/assets/apple_does_not_slow_iphone_down_we_do/activity.png)
 
-Right now, I don't have any important software open on my laptop and 11GB of ram is already full. 6 years ago, my laptop had 2GB of ram and it was enough!
+Right now, I don't have any important software open on my laptop and 11GB of ram is already full. 6 years ago, my laptop had 2GB of RAM and it was enough!
 
 What's going on under the hood? Why do softwares eat too much nowadays?
 
@@ -27,7 +27,7 @@ Barely you leave an interview while you haven't answered some questions about bi
 But soon or later, we realize that the number of ignored users are growing and maybe we should include them again. So this is why Lite version of apps is becoming a thing (Facebook Lite, Spotify Lite, Twitter Lite, Skype Lite, ...). Although many of them are nothing more than the existing product minus some features.
 
 ### Part IV: Good Old Days 
-Last year I read [GAME ENGINE BLACK BOOK: WOLFENSTEIN 3D](http://fabiensanglard.net/gebbwolf3d/). It's fascinating. To me, it is a treasure chest. As [folklore](https://www.folklore.org/) and [Code Secret](https://www.youtube.com/playlist?list=PLi29TNPrdbwJLiB-VcWSSg-3iNTGJnn_L) are. Sometimes what you find on [reddit](https://www.reddit.com/r/gaming/comments/8ij644/the_bushes_and_clouds_in_super_mario_bros_are_the/) or in [an interview](https://www.theverge.com/2012/4/27/2980806/prince-of-persia-jordan-mechner-narrative-games) impresses you. They sound like fairy tales. When software development is more about crafting than wrestling with a bunch of technologies, tools, frameworks and sitting top of shaky stacks of unknown or hard-to-be-known layers. When people pay attention to each line of code they write and every byte of memory they use. 
+Last year I read [Game engine black book: Wolfenstein 3D](http://fabiensanglard.net/gebbwolf3d/). It's fascinating. To me, it is a treasure chest. As [folklore](https://www.folklore.org/) and [Code Secret](https://www.youtube.com/playlist?list=PLi29TNPrdbwJLiB-VcWSSg-3iNTGJnn_L) are. Sometimes what you find on [reddit](https://www.reddit.com/r/gaming/comments/8ij644/the_bushes_and_clouds_in_super_mario_bros_are_the/) or in [an interview](https://www.theverge.com/2012/4/27/2980806/prince-of-persia-jordan-mechner-narrative-games) impresses you. They sound like fairy tales. When software development is more about crafting than wrestling with a bunch of technologies, tools, frameworks and sitting top of shaky stacks of unknown or hard-to-be-known layers. When people pay attention to each line of code they write and every byte of memory they use. 
 
 I felt over the course of time we, developers, are getting negligent and careless. We believe memory is a customer's problem, not ours. 
 
