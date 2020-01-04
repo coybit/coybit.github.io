@@ -18,10 +18,9 @@ font-size: 20px;
 line-height: $nav-height;
 letter-spacing: -1px;
 margin-bottom: 0;
-&:hover {
-text-decoration: none;
+font-size: 28px;
+font-weight: 600;
 color: $theme-color;
-    }
 }
 .site-nav {
 float: right;

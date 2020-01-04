@@ -2,6 +2,7 @@
 layout: post
 title:  "solving the mystry case of `print(!)` using ast"
 categories: 
+tags: Swift iOS compiler
 ---
 It all started when I mistakenly removed `date` from this line of code just before pressing Run button of XCode:
 ``` swift

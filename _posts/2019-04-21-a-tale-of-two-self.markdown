@@ -2,6 +2,7 @@
 layout: post
 title:  "a tale of two `self`"
 categories: 
+tags: Swift Objective-C
 ---
 A while ago, I came across a problematic piece of code that turned out to be an interesting one:
 

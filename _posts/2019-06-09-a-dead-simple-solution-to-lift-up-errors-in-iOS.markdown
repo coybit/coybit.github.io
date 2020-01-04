@@ -2,6 +2,7 @@
 layout: post
 title:  "a dead simple solution to lift up errors in ios"
 categories: 
+tags: UIKit Swift iOS
 ---
 
 In this post, I want to show you how you can utilize [the responder chain](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events?language=objc) to bubble up an error message through your app UI structure till it gets to the node which can handle it. It is especially useful if you are a fan of [Container View Controller](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html).

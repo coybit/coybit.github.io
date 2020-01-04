@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "bash: going down the rabbit hole"
+tags: bash
 ---
 ### Question
 Last week when I was looking at a bash script file, I saw this line:

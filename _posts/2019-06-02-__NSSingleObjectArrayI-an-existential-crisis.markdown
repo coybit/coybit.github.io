@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "__NSSingleObjectArrayI: an existential crisis"
+tags: Objective-C iOS Foundation
 ---
 
 When you create an new instance of [NSArray](https://developer.apple.com/documentation/foundation/nsarray/1460096-arraywithobjects?language=objc), inside [arrayWithObjects:count:](https://developer.apple.com/documentation/foundation/nsarray/1460096-arraywithobjects?language=objc)  (which can be called directly and is called indirectly by other constructors and also is that method is used internally to create an array from a literal array) depending on how many items it has, under the hood `NSArray` may create either an instance of `__NSArrayI`([Runtime Header file](https://github.com/nst/iOS-Runtime-Headers/blob/master/Frameworks/CoreFoundation.framework/__NSSingleObjectArrayI.h)) or an instance of  `__NSSingleObjectArrayI` ([Runtime Header file](https://github.com/nst/iOS-Runtime-Headers/blob/master/Frameworks/CoreFoundation.framework/__NSSingleObjectArrayI.h)). Actually, if the array contains one item, `NSArray` create an instance of `__NSSingleObjectArrayI`, otherwise `__NSArrayI` gets used.

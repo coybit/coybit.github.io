@@ -2,6 +2,7 @@
 layout: post
 title:  "api design: in search of confidence"
 categories:
+tags: API Objective-C
 ---
 A given API to be well-designed has to fulfill many requirements and we can talk about these requirements for hours. But here I'm going to talk about one aspect of a well-thought and well-design API that I believe is really important: How confident we are in what we are doing?
 When we are using an API, as we are writing code, for a second we ask ourselves "Am I doing it right?", "Is it the right method", "Don't I have to call another method before/after this one?", etc. The API should be designed in such a way that minimizes the frequency of these uncertainty moments. Here I like to talk about three techniques that I utilized just recently:
