@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "apple doesn't slow iPhone down, we do"
+description: 
+tags: iOS Apple performance
 ---
 
 ### Part I: I lost my brand new iPhone ☹️
