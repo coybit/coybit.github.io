@@ -176,6 +176,22 @@ display: block;
 font-size: 42px;
 }
 
+.post-related {
+    border: 2px dotted;
+    margin-top: 6em;
+    background-color: #eee;
+    padding: 1em;
+
+    .related-post {
+        margin-bottom: 2em;
+    
+        .related-post-tag {
+            color: #b1b1b1;
+            font-size: 0.8em;
+        }
+    }
+}
+
 /** Poem formatting ********************************************/
 .poem-title {
 font-size: 24px;
