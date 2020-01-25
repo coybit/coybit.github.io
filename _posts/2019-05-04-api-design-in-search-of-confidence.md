@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "api design: in search of confidence"
 categories:
 tags: API Objective-C

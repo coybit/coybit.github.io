@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "__NSSingleObjectArrayI: an existential crisis"
 tags: Objective-C iOS Foundation
 ---

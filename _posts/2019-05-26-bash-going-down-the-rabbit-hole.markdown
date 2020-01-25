@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "bash: going down the rabbit hole"
 tags: bash
 ---

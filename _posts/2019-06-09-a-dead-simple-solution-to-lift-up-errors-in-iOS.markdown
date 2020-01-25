@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "a dead simple solution to lift up errors in ios"
 categories: 
 tags: UIKit Swift iOS

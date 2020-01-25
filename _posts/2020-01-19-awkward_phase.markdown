@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "awkward phase"
 description: 
 tags: software engineering architecture refactor design

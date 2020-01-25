@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "one small change for xcode, one giant leap for productivity"
 categories: 
 tags: Xcode iOS test

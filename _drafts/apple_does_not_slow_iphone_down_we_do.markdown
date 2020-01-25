@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "apple doesn't slow iPhone down, we do"
 ---
 

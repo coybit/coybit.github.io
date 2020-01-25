@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "daily standup: where scrum flys or dies"
 categories:
 description: 

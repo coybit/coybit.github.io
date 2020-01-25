@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "solving the mystry case of `print(!)` using ast"
 categories: 
 tags: Swift iOS compiler

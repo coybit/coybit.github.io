@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "the curious case of nil-coalescing operator"
 tags: Swift
 ---

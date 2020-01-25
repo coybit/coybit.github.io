@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "firebase sdk: one repository, multiple pods"
 categories: 
 tags: Cocoapod API Firebase

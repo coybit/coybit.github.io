@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "a tale of two `self`"
 categories: 
 tags: Swift Objective-C
