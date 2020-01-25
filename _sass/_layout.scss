@@ -21,6 +21,7 @@ margin-bottom: 0;
 font-size: 28px;
 font-weight: 600;
 color: $theme-color;
+cursor: pointer;
 }
 .site-nav {
 float: right;
@@ -189,6 +190,27 @@ font-size: 42px;
             color: #b1b1b1;
             font-size: 0.8em;
         }
+    }
+}
+
+.post {
+    table {
+        margin: 2em auto;
+        font-size: 0.8em;
+    }
+
+    table, th, td, tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-spacing: 3px;
+    }
+
+    td, tr {
+        padding: 0px 14px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
     }
 }
 
