@@ -7,7 +7,7 @@ tags: salary job
 ---
 Recently, I disclosed my salary to someone and I couldn't help myself asking if it was the right decision.
 
-Most people, including me, are usually unwilling to disclose their salary. Who does benefit from this secrecy? employee. It’s scary how the fear of being judged gets us to act against our self-interest. We fall into this trap because we translate our salary to our value and omit to separate our identifiy from our profession.
+Most people, including me, are usually unwilling to disclose their salary. Who does benefit from this secrecy? employer. It’s scary how the fear of being judged gets us to act against our self-interest. We fall into this trap because we translate our salary to our value and omit to separate our identifiy from our profession.
 
 I can think of 4 reasons for which people don’t want to talk about their salary:
 1. You disclose your salary and you find out that your mate, equally or less qualified, making more. You feel you have failed in selling yourself and your employee has exploited this opportunity and pay you less than you deserve. **You feel you are a fool**.
