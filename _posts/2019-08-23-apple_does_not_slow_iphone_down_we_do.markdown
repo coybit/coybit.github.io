@@ -4,7 +4,11 @@ comments: true
 title:  "apple doesn't slow iPhone down, we do"
 description: 
 tags: iOS Apple performance
+excerpt_separator: <!--more-->
 ---
+
+There has always been a conspiracy that Apple deliberatly slows iPhone devies down to make people to buy new one. Is it true?
+<!--more-->
 
 ### Part I: I lost my brand new iPhone ☹️
 I lost my iPhone XS three weeks ago. I don't want to buy a new one again any time soon. So I fished my old iPhone 5s out of my drawer. Setting it up, I noticed it is slow. To be accurate, it was too slow. Slower than when I was using it as my main device/phone. It's unbearable. Why is it so? What happened in the last 2-3 months? [Has Apple done some magic to persuade me to buy a new phone](https://webcache.googleusercontent.com/search?q=cache:CNH3hYYmNXEJ:https://www.huffpost.com/entry/apple-new-iphones_n_5967626)?

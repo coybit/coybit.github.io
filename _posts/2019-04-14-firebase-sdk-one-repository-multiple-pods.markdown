@@ -4,9 +4,10 @@ comments: true
 title:  "firebase sdk: one repository, multiple pods"
 categories: 
 tags: Cocoapod API Firebase
+excerpt_separator: <!--more-->
 ---
-Honestly, when I learned how [Firebase SDK](https://github.com/firebase/firebase-ios-sdk) has been organized as a single repository that contains multiple pods, I found it really neat and efficient.
-
+Honestly, when I learned how [Firebase SDK](https://github.com/firebase/firebase-ios-sdk) has been organized as a single repository that contains multiple pods, I found it really neat and efficient. Let's check it out.
+<!--more-->
 Firebase iOS SDK includes different components that can be used independently in your app, like FirebaseCore, FirebaseMessaging, FirebaseFirestore, ...
 
 But how have they managed to do that?

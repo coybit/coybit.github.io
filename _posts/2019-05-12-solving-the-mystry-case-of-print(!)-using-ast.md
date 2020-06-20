@@ -4,11 +4,13 @@ comments: true
 title:  "solving the mystry case of `print(!)` using ast"
 categories: 
 tags: Swift iOS compiler
+excerpt_separator: <!--more-->
 ---
 It all started when I mistakenly removed `date` from this line of code just before pressing Run button of XCode:
 ``` swift
 print(date!)
 ```
+<!--more-->
 The app got compiled successfully and this line:
 ``` swift
 print(!)

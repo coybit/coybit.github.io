@@ -4,9 +4,11 @@ comments: true
 title:  "a dead simple solution to lift up errors in ios"
 categories: 
 tags: UIKit Swift iOS
+excerpt_separator: <!--more-->
 ---
 
 In this post, I want to show you how you can utilize [the responder chain](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events?language=objc) to bubble up an error message through your app UI structure till it gets to the node which can handle it. It is especially useful if you are a fan of [Container View Controller](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html).
+<!--more-->
 Responder Chain is a linked list built and maintained by iOS that represents the prioritized list of object that potentially can respond to events that occur in UI. If you like to learn more about Responder Chain pattern in general [here](https://refactoring.guru/design-patterns/chain-of-responsibility) or more specific in iOS [here](https://useyourloaf.com/blog/using-the-responder-chain/) and [here](https://swiftrocks.com/understanding-the-ios-responder-chain.html).
 
 Suppose that you have a nested structure of views and view controllers that presents the UI of your app. If something goes wrong in any of this view controllers or views and you don't want to handle the error there and you prefer you pass it up to its ancestors, you might use delegate pattern or closure or other solution. But you usually end up adding some kind of one-direction wire between views and view controllers which have parent-child relation. Fortunately, we already have this one-direction wire between parent and child for free and we just need to use it.

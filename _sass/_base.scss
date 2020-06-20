@@ -12,8 +12,9 @@ dl, dd, ol, ul, figure {
 
 /** Variables **********************************************/
 $base-font-family:              Helvetica, sans-serif;
-$base-font-size:                18px;
-$base-line-height:              1.6em;
+$base-font-size:                15pt;
+$title-font-size:              24pt;
+$base-line-height:              1.4em;
 $horizontal-spacing-unit:       50px;
 $vertical-spacing-unit:         40px;
 $nav-height:                    40px;
@@ -23,24 +24,21 @@ $img_spacing: 5px;
 $img_height: 275px;
 $caption_font_size: 12px;
 $caption_color: #aaa;
+$radius: 8px;
 
 /* COLORS  */
-$red:  #FF3636;
-$orange: #F29105;
-$blue: #2698BA;
-$green: #11D68B;
-$lime_green: #B7D12A;
-$purple: #B509AC;
+$very_dark_color: #323936;
+$dark_color: #5D6855;
+$light_color: #A18C62;
+$very_light_color: #CFAF74;
+$super_light_color: #c3c5b9;
 
-
-$grey-color-dark: #333;   /* footer */
-$grey-color-medium: #d3d3d3;   /* code */
-$grey-color-light: #ddd;  /* navigation bar border */
-$text-color:     #666;
 
 /* Set theme color *************************/
-$theme-color:   $red;
-
+$theme-color:   $light_color;
+$text-color: $super_light_color;
+$background-color: $very_dark_color;
+$box-background-color: $dark_color;
 
 /************************************************************/
 
@@ -51,7 +49,7 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 100;
+    font-weight: 300;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -115,7 +113,6 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
-    margin-top: 70px;
 }
 
 
@@ -124,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: $text-color;
-    text-decoration: none;
+
     /*
     &:visited {
         color: darken($brand-color, 15%);
@@ -177,9 +174,11 @@ pre {
 
 p, li {
     code {
-        color: #ce0202;
-        background: #ffebeb;
-        padding: 0 2px;
+        color: $text-color;
+        background: #002b36;
+        padding: 2px 8px;
+        font-size: 12pt;
+        border-radius: $radius;
     }
 }
 

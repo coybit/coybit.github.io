@@ -3,47 +3,51 @@
  * Site header   **********************************************************
  */
 .site-header {
-border-bottom: 1px solid $grey-color-light;
-background-color: #fff;
-position:fixed;
-left:0px;
-top:0px;
-height:40px;
-width:100%;
-z-index: 50;
+    background-color: $background_color;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    z-index: 50;
+
+    @include media-query($on-palm) {
+        font-size: 8pt;
+    }
 }
 
 .site-title {
-font-size: 20px;
-line-height: $nav-height;
-letter-spacing: -1px;
-margin-bottom: 0;
-font-size: 28px;
-font-weight: 600;
-color: $theme-color;
-cursor: pointer;
+    font-size: 20px;
+    line-height: $nav-height;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: $theme-color;
+    cursor: pointer;
 }
 .site-nav {
-float: right;
-line-height: $nav-height;
-.page-link{
-line-height: $base-line-height;
+    float: right;
+    line-height: $nav-height;
+    .page-link {
+        line-height: $base-line-height;
         // Gaps between nav items, but not on the first one
-&:not(:first-child) {
-margin-left: 10px;
+        &:not(:first-child) {
+            margin-left: 10px;
         }
     }
-@include media-query($on-palm) {
-position: fixed;
-top: 0px;
-right: 10px;
-text-align: right;
-&:hover .trigger {
-display: block;
-padding-bottom: 5px;
+
+    @include media-query($on-palm) {
+        top: 0px;
+        right: 10px;
+        text-align: right;
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
         }
-.page-link {
-display: line;
+
+        .page-link {
+            display: line;
         }
     }
 }
@@ -73,15 +77,15 @@ display: line;
  * Site footer  **********************************************************
  */
 .site-footer {
-border-top: 1px solid $grey-color-dark;
-font-size: 10px;
-background-color: $grey-color-dark;
-padding: 2px;
-color: #aaa;
-position:fixed;
-left:0px;
-bottom:0px;
-width:100%;
+    border-top: 1px solid $grey-color-dark;
+    font-size: 10px;
+    background-color: $grey-color-dark;
+    padding: 2px;
+    color: #aaa;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
 }
 
 .site-footer p {
@@ -114,10 +118,13 @@ padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */
 font-size: 20px;
 }
 .post-list {
-margin: 0px 0;
-list-style: none;
+    margin: 0px 0;
+    list-style: none;
     > li {
-margin-bottom: $vertical-spacing-unit;
+        margin-bottom: $vertical-spacing-unit;
+        background: #5d685526;
+        border-radius: 8px;
+        padding: 16px;
     }
 }
 .contacticon {
@@ -135,7 +142,7 @@ text-align: center;
 margin-bottom: $vertical-spacing-unit;
 }
 .post-title {
-font-size: 42px;
+font-size: $title-font-size;
 letter-spacing: -1px;
 line-height: 1;
 @include media-query($on-laptop) {
@@ -147,12 +154,13 @@ font-size: 36px;
     }
 }
 .post-content {
-h2 {
-font-size: 42px;
-@include media-query($on-laptop) {
-font-size: 28px;
+    h2 {
+        font-size: 42px;
+        @include media-query($on-laptop) {
+            font-size: 28px;
         }
     }
+
 h3 {
 margin-bottom: 20px; // New
 font-size: 30px;
@@ -168,26 +176,28 @@ font-size: 18px;
     }
 }
 .post-meta {
-font-size: $small-font-size;
-color: $grey-color;
-margin-bottom: 0px; 
+    font-size: $small-font-size;
+    color: $text-color;
+    margin-bottom: 0px; 
 }
 .post-link {
-display: block;
-font-size: 42px;
+    display: block;
+    font-size: 42px;
+}
+
+.related-posts-title {
+    margin: 4em 0 1em 0;
 }
 
 .post-related {
-    border: 2px dotted;
-    margin: 6em 0;
-    background-color: #eee;
-    padding: 1em;
+    border-radius: $radius;
+    margin: 16px 0;
+    background-color: $box-background-color;
+    padding: 16px;
 
     .related-post {
-        margin-bottom: 2em;
-    
         .related-post-tag {
-            color: #b1b1b1;
+            background-color: $light_color;
             font-size: 0.8em;
         }
     }
@@ -214,108 +224,11 @@ font-size: 42px;
     }
 }
 
-/** Poem formatting ********************************************/
-.poem-title {
-font-size: 24px;
-letter-spacing: -1px;
-line-height: 1;
-@include media-query($on-laptop) {
-font-size: 16px;
-    }
-}
 
-
-/** 
- * Portfolio grid **********************************************************
-*/
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-content: " ";
-display: table;
-}
-.clearfix:after {
-clear: both;
-}
-.project {
-width: 33.33%;
-height: 250px;
-float: left;
-vertical-align: middle;
-box-sizing: border-box;
-padding: 10px;
-}
-.thumbnail{
-width: 100%;
-height: 230px;
-overflow: hidden;
-}
-.thumbnail img{
-width: 500px;
-height: auto;
-position: relative;
-left: -25%;
-top: -5%;
-}
-.thumbnail a{
-float: left;
-position: relative;
-width: 100%;
-height: 230px;
-}
-.thumbnail a span {
-display: none;
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background: rgba(0,0,0,0.4);
-color: $grey-color-light;
-padding: 40px;
-text-align: center;
-}
-.thumbnail a:hover span {
-display: block;
-}
-/** 
- * Portfolio pages **********************************************************
-*/
-.blankbox{
-background: $theme-color;
-}
-.img_row{
-height: $img_height;
-width: 100%;
-overflow: hidden;
-box-sizing:border-box;
-padding: $img_spacing;
-}
-.col{ 
-width: 100%;
-height: 100%;
-float: left;
-object-fit: cover;
-box-sizing:border-box;
-padding: $img_spacing;
-}
-.right{
-float: right;
-}
-.one {
-width:33.33%;
-}
-.two {
-width: 66.66%;
-}
-.three{
-width: 100%;
-}
-.caption{
-height: 100%;
-color: $caption_color;
-text-align: center;
-vertical-align: middle;
-font-size: $caption_font_size;
+.tag {
+    background-color: $dark_color;
+    padding: 4px;
+    border-radius: 8px;
+    color: $text_color;
+    font-size: 12pt;
 }

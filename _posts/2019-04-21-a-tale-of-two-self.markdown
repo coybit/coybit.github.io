@@ -4,6 +4,7 @@ comments: true
 title:  "a tale of two `self`"
 categories: 
 tags: Swift Objective-C
+excerpt_separator: <!--more-->
 ---
 A while ago, I came across a problematic piece of code that turned out to be an interesting one:
 
@@ -13,7 +14,9 @@ extension UIViewController {
 }
 ```
 
-The value of screenName is always equal to `(Function)`. But what I needed was the type of `UIViewController` instance as a String. For example:
+The value of screenName is always equal to `(Function)`. But what I needed was the type of `UIViewController` instance as a String.
+<!--more-->
+For example:
 
 ``` swift
 class ReaderViewController: UIViewController { ... }

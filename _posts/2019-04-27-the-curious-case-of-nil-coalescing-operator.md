@@ -3,10 +3,11 @@ layout: post
 comments: true
 title:  "the curious case of nil-coalescing operator"
 tags: Swift
+excerpt_separator: <!--more-->
 ---
-The Curious Case of Nil-Coalescing Operator
-
-Using `??` within a class initializer under some circumstances leads to an ambiguous compiler error message. I encountered this problem when I was writing a class like this:
+Using `??` within a class initializer under some circumstances leads to an ambiguous compiler error message.
+<!--more-->
+I encountered this problem when I was writing a class like this:
 ``` swift
 class MyClass {
     private var fname: String?

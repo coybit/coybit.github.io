@@ -5,8 +5,10 @@ title:  "daily standup: where scrum flys or dies"
 categories:
 description: 
 tags: scrum agile team
+excerpt_separator: <!--more-->
 ---
 It was roughly nine years ago when I attended my first official Scrum Daily Standup. I among my four teammates went to our manager office at 10 in the morning. After 10min, when we were done, I felt it was useless. Since then (almost) in every company I worked at, we had some kind of daily standup. Except for a few times, I never enjoyed being in a standup. 
+<!--more-->
 Usually, standup is the first thing a company/team starts with when they decide to adapt to Scrum or any variation of Agile methodology. Honestly, from company perspective, it is the cheapest and less risky part of Scrum. Just 5 minute per day.
 Any implementation of Scrum Daily Standup I've experienced so far was kind of a failure, most of the time partially and sometimes completely. 
 I, as an observer of all these failures, asked myself every time, after every standup, what needs to be changed? Until 5 months ago, when I learned how a standup suppose to be.

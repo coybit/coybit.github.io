@@ -5,14 +5,14 @@ layout: default
 <ul class="post-list">
 {% for post in site.posts %}
     <li>
-        <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
-        <p>{{ post.description }}</p>
-        <p>
+        <h2>
+          <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p>{{ post.excerpt }}</p>
         {% for tag in post.tags %}
-          <span><i>#{{ tag }}</i></span>
+          <span class="tag">{{ tag }}</span>
         {% endfor %}
-        </p>
       </li>
 {% endfor %}
 </ul>

@@ -3,13 +3,15 @@ layout: post
 comments: true
 title:  "bash: going down the rabbit hole"
 tags: bash
+excerpt_separator: <!--more-->
 ---
 ### Question
 Last week when I was looking at a bash script file, I saw this line:
 ``` sh
 [[ $FOLDER_NAME == "ios" ]] && lib="lib-osx-amd64" || lib="lib-linux32"
 ```
-I'm not a bash expert, so this line caught my attention. At first, I thought what `A && B || C` does is similar to what `A ? B : C` in many programming languages do. It takes a few hours of debugging, reading and thinking to realize this hypothesis was wrong!
+I'm not a bash expert, so this line caught my attention. At first, I thought what `A && B || C` does is similar to what `A ? B : C` in many programming languages does. It takes a few hours of debugging, reading and thinking to realize this hypothesis was wrong!
+<!--more-->
 Actually, if you're using `A && B || C` in bash how you use `A ? B : C`  in other programming languages without knowing what is happening under the hood, and it works for you, you are just lucky!
 
 ### Contradiction

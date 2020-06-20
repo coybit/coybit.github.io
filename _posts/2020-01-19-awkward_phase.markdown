@@ -4,6 +4,7 @@ comments: true
 title: "awkward phase"
 description: 
 tags: software engineering architecture refactor design
+excerpt_separator: <!--more-->
 ---
 
 
@@ -13,7 +14,7 @@ tags: software engineering architecture refactor design
 * Are you migrating from an old fashion document-less backend to a new shining cutting-edge one?
 
 So you’re in an awkward phase. Aren’t you?
-
+<!--more-->
 ![](https://raw.githubusercontent.com/coybit/coybit.github.io/master/assets/cognitive_load_chart.png)
 
 
