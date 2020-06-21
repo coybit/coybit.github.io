@@ -1,7 +1,6 @@
 # Site settings
 title: mohsen
 description:  a personal blog where I write about software engineering, productivity, hunting down bugs and products I like
-baseurl:  # the subpath of your site, e.g. /blog/
 url:  https://mohsen.dev
 twitter_username: coybit
 github_username:  coybit
