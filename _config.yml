@@ -1,10 +1,14 @@
 # Site settings
 title: mohsen
-description: > # this means to ignore newlines until "baseurl:"
+description:  a personal blog where I write about software engineering, productivity, hunting down bugs and products I like
 baseurl:  # the subpath of your site, e.g. /blog/
-url:  # the base hostname & protocol for your site
+url:  https://mohsen.dev
 twitter_username: coybit
 github_username:  coybit
+tagline: My personal blog where I write about software engineering
+twitter:
+  username: coybit
+  card: summary
 
 # Build settings
 markdown: kramdown
@@ -18,3 +22,4 @@ paginate_path: "/blog/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
